@@ -1,4 +1,5 @@
 # ServerPlugins
 Plugins for Minecraft server
 ## KOMENDY
- `clear` - Czyszczenie czatu
+ `clear` / `cc` - Czyszczenie czatu
+ `ciekawostka` - Losowa ciekawostka

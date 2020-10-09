@@ -1,6 +1,7 @@
 package me.server.plugins;
 
 import me.server.plugins.chatCommands.ClearChat;
+import me.server.plugins.chatCommands.Curios;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -10,19 +11,20 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
     @Override
-    public void onEnable()
-    {
+    public void onEnable() {
         this.getLogger().info("Trwa uruchamianie chatu...");
 
         getCommand("clear").setExecutor(new ClearChat());
+        getCommand("cc").setExecutor(new ClearChat());
+        getCommand("ciekawostka").setExecutor(new Curios());
 
-        getLogger().info("Uruchomiono...");
+        getLogger().info("Uruchamiam LavXo Plugin Box");
     }
 
     @Override
     public void onDisable()
     {
-        getLogger().info("Wylaczanie...");
+        getLogger().info("Wylaczam LavXo Plugin Box");
     }
 
 

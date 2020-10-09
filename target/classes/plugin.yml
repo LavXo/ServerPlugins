@@ -1,5 +1,5 @@
 name: ServerPlugins
-version: v0.01
+version: v0.02
 author: LavXo
 description: Some minecraft plungins.
 
@@ -8,5 +8,13 @@ main: me.server.plugins.Main
 commands:
   clear:
     description: Fajna komenda. A czysci hipkom chat.
+    permission: chat.clear
+    default: op
+  cc:
+    description: Fajna komenda. A czysci hipkom chat.
+    permission: chat.clear
+    default: op
+  zagadka:
+    description: Zagadka
     permission: chat.clear
     default: op

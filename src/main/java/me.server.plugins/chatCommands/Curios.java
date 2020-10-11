@@ -1,13 +1,14 @@
 package me.server.plugins.chatCommands;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Curios implements CommandExecutor {
-    Random rnd = new Random();
+    int random;
     String[] curios = {
             "Kot ma cztery lapy. Wow!",
             "Krzys to cham. Yeah!",
@@ -17,10 +18,10 @@ public class Curios implements CommandExecutor {
     };
 
     @Override
-    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] arg) {
-        if(cmd.getName().equalsIgnoreCase("ciekawostka")){
-            int random = rnd.nextInt(5);
-            sender.sendMessage("Twoja ciekawostka: " + curios[random]);
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] arg) {
+        if(command.getName().equalsIgnoreCase("ciekawostka")){
+            random = ThreadLocalRandom.current().nextInt(5);
+            sender.sendMessage(ChatColor.DARK_RED + "Twoja ciekawostka: " + ChatColor.GOLD + curios[random]);
         }
         return false;
     }

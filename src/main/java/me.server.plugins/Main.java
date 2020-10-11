@@ -2,7 +2,10 @@ package me.server.plugins;
 
 import me.server.plugins.chatCommands.ClearChat;
 import me.server.plugins.chatCommands.Curios;
-import org.bukkit.Bukkit;
+import me.server.plugins.events.PlayerLogin;
+import me.server.plugins.events.PlayerQuit;
+import me.server.plugins.events.PlayerHoldingGoldenApple;
+import me.server.plugins.tools.LightningWand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /*
@@ -12,13 +15,17 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
-        this.getLogger().info("Trwa uruchamianie chatu...");
-
+        getServer().getPluginManager().registerEvents(new PlayerLogin(), this);
+        getServer().getPluginManager().registerEvents(new PlayerQuit(), this);
+        getServer().getPluginManager().registerEvents(new PlayerHoldingGoldenApple(), this);
+        getServer().getPluginManager().registerEvents(new LightningWand(), this);
         getCommand("clear").setExecutor(new ClearChat());
         getCommand("cc").setExecutor(new ClearChat());
         getCommand("ciekawostka").setExecutor(new Curios());
 
-        getLogger().info("Uruchamiam LavXo Plugin Box");
+
+
+        getLogger().info("Uruchomiono LavXo Plugin Box");
     }
 
     @Override

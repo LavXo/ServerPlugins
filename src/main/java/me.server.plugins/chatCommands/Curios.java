@@ -19,7 +19,7 @@ public class Curios implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] arg) {
-        if(command.getName().equalsIgnoreCase("ciekawostka")){
+        if(command.getName().equalsIgnoreCase("curios")){
             random = ThreadLocalRandom.current().nextInt(5);
             sender.sendMessage(ChatColor.DARK_RED + "Twoja ciekawostka: " + ChatColor.GOLD + curios[random]);
         }

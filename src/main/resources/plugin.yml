@@ -15,6 +15,6 @@ commands:
     permission: chat.clear
     default: op
   ciekawostka:
-    description: ciekawostka
+    description: curios
     permission: chat.clear
     default: op

@@ -13,7 +13,7 @@ public class LightningWand implements Listener {
         Player player = event.getPlayer();
         ItemStack item = player.getInventory().getItemInMainHand();
         if(item.getType() == Material.STICK){
-            // player.getWorld().strikeLightning(player.);    TODO CURSOR LOCATION INPUT
+            player.getWorld().strikeLightning(player.getEyeLocation());
             player.sendMessage("You're wizGAYzard Harry.");
         }
 

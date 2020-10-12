@@ -14,7 +14,7 @@ public class PlayerHoldingGoldenApple implements Listener {
     final void onPlayerHoldingApple(PlayerItemHeldEvent event){
         Player player = event.getPlayer();
         ItemStack item = player.getInventory().getItemInMainHand();
-        if(item.getType() == Material.GOLDEN_APPLE) {
+        if(item.getType() == Material.ENCHANTED_GOLDEN_APPLE) {
             player.playSound(player.getLocation(), Sound.ENTITY_ENDERMAN_AMBIENT, 1,1);
             Bukkit.broadcastMessage("On czyma japko!");
         }

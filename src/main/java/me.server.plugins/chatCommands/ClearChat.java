@@ -10,7 +10,7 @@ import org.bukkit.command.CommandSender;
     Dariusz Wołkowski ©2019
 */
 public class ClearChat implements CommandExecutor {
-    private String linia = "&6&m---------------------";
+    private final String linia = "&6&m---------------------";
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {

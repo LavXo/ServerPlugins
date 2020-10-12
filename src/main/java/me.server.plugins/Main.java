@@ -21,7 +21,7 @@ public class Main extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new LightningWand(), this);
         getCommand("clear").setExecutor(new ClearChat());
         getCommand("cc").setExecutor(new ClearChat());
-        getCommand("ciekawostka").setExecutor(new Curios());
+        getCommand("curios").setExecutor(new Curios());
 
 
 

@@ -1,5 +1,6 @@
 name: ServerPlugins
 version: 0.5
+api-version: 1.15
 author: LavXo
 description: Some minecraft plungins.
 
@@ -14,7 +15,11 @@ commands:
     description: Fajna komenda. A czysci hipkom chat.
     permission: chat.clear
     default: op
-  ciekawostka:
+  curios:
     description: curios
     permission: chat.clear
+    default: op
+  wizzard:
+    description: Daje fajnom ruszczke.
+    permission: tools.addlightningwand
     default: op

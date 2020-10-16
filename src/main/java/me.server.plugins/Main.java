@@ -19,19 +19,17 @@ public class Main extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PlayerQuit(), this);
         getServer().getPluginManager().registerEvents(new PlayerHoldingGoldenApple(), this);
         getServer().getPluginManager().registerEvents(new LightningWand(), this);
+
         getCommand("clear").setExecutor(new ClearChat());
         getCommand("cc").setExecutor(new ClearChat());
         getCommand("curios").setExecutor(new Curios());
         getCommand("wizzard").setExecutor(new LightningWand());
 
-
-
         getLogger().info("Uruchomiono LavXo Plugin Box");
     }
 
     @Override
-    public void onDisable()
-    {
+    public void onDisable() {
         getLogger().info("Wylaczam LavXo Plugin Box");
     }
 

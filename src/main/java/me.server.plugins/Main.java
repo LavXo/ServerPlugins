@@ -2,6 +2,7 @@ package me.server.plugins;
 
 import me.server.plugins.chatCommands.ClearChat;
 import me.server.plugins.chatCommands.Curios;
+import me.server.plugins.events.PlayerBedEnter;
 import me.server.plugins.events.PlayerLogin;
 import me.server.plugins.events.PlayerQuit;
 import me.server.plugins.events.PlayerHoldingGoldenApple;
@@ -19,6 +20,7 @@ public class Main extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PlayerQuit(), this);
         getServer().getPluginManager().registerEvents(new PlayerHoldingGoldenApple(), this);
         getServer().getPluginManager().registerEvents(new LightningWand(), this);
+        getServer().getPluginManager().registerEvents(new PlayerBedEnter(), this);
 
         getCommand("clear").setExecutor(new ClearChat());
         getCommand("cc").setExecutor(new ClearChat());

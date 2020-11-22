@@ -6,6 +6,7 @@ import me.server.plugins.events.PlayerBedEnter;
 import me.server.plugins.events.PlayerLogin;
 import me.server.plugins.events.PlayerQuit;
 import me.server.plugins.events.PlayerHoldingGoldenApple;
+import me.server.plugins.tools.Fly;
 import me.server.plugins.tools.LightningWand;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -26,6 +27,7 @@ public class Main extends JavaPlugin {
         getCommand("cc").setExecutor(new ClearChat());
         getCommand("curios").setExecutor(new Curios());
         getCommand("wizzard").setExecutor(new LightningWand());
+        getCommand("fly").setExecutor(new Fly());
 
         getLogger().info("Uruchomiono LavXo Plugin Box");
     }

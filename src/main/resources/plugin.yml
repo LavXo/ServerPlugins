@@ -23,3 +23,7 @@ commands:
     description: Daje fajnom ruszczke.
     permission: tools.addlightningwand
     default: op
+  fly:
+    description: Daje latanko.
+    permission: chat.clear
+    default: op

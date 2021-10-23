@@ -12,6 +12,6 @@ public class PlayerLogin implements Listener {
     final void onPlayerLogin(PlayerJoinEvent event){
         Player player = event.getPlayer();
         player.playSound(player.getLocation(), Sound.ENTITY_LIGHTNING_BOLT_THUNDER, 100,1);
-        event.setJoinMessage(ChatColor.GOLD + "Siema siema kurwa witam " + ChatColor.RED + player.getName());
+        event.setJoinMessage(ChatColor.GOLD + "Witam " + ChatColor.RED + player.getName());
     }
 }

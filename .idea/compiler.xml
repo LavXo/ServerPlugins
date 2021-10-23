@@ -3,8 +3,8 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile name="Annotation profile for Plugins" enabled="true">
-        <sourceOutputDir name="../../Desktop/servermc/plugins/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../Desktop/servermc/plugins/generated-test-sources/test-annotations" />
+        <sourceOutputDir name="../../Desktop/Server/plugins/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../Desktop/Server/plugins/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Plugins" />
       </profile>

@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d70e76c-324d-4f37-acf3-b2fe81188ef9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me.server.plugins/tools/Fly.java" afterDir="false" />
+    <list default="true" id="5d70e76c-324d-4f37-acf3-b2fe81188ef9" name="Default Changelist" comment="Added new PlayerEvents">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me.server.plugins/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me.server.plugins/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me.server.plugins/chatCommands/Curios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me.server.plugins/chatCommands/Curios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me.server.plugins/events/PlayerLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me.server.plugins/events/PlayerLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me.server.plugins/events/PlayerQuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me.server.plugins/events/PlayerQuit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +45,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Users\LavXo\AppData\Local\JetBrains\Toolbox\apps\IDEA-C\ch-0\202.6948.69\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1idZQr2z35792rAFQvvQD0ZqJMp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -57,12 +52,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SP_Tr_array" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Programowanie/Java/Idea/Guava" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -127,6 +125,8 @@
       <workItem from="1558256239213" duration="32000" />
       <workItem from="1561119772946" duration="156000" />
       <workItem from="1573205832399" duration="51000" />
+      <workItem from="1615651336149" duration="50000" />
+      <workItem from="1635013872652" duration="759000" />
     </task>
     <task id="LOCAL-00001" summary="Added new PlayerEvents">
       <created>1602441305086</created>
@@ -142,76 +142,10 @@
     <option name="totallyTimeSpent" value="4346000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added new PlayerEvents" />
     <option name="LAST_COMMIT_MESSAGE" value="Added new PlayerEvents" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="440" y="94" key="#Project_Structure" timestamp="1602239698305">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1602239698305" />
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1606079033279">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606079033279" />
-    <state x="603" y="434" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1602438513910">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="603" y="434" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602438513910" />
-    <state x="743" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1602432257372">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="743" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1602432257372" />
-    <state x="756" y="401" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1602432190531">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="756" y="401" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1602432190531" />
-    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1602441304422">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602441304422" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602364065488">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602364065488" />
-    <state width="1877" height="171" key="GridCell.Tab.0.bottom" timestamp="1606080233523">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="171" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606080233523" />
-    <state width="1877" height="171" key="GridCell.Tab.0.center" timestamp="1606080233522">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="171" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606080233522" />
-    <state width="1877" height="171" key="GridCell.Tab.0.left" timestamp="1606080233522">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="171" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606080233522" />
-    <state width="1877" height="171" key="GridCell.Tab.0.right" timestamp="1606080233522">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="171" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606080233522" />
-    <state x="540" y="255" key="IDE.errors.dialog" timestamp="1602246467605">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="540" y="255" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602246467605" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1602432473506">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602432473506" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602441309397">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602441309397" />
-    <state x="544" y="140" key="new project wizard" timestamp="1605344223108">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="544" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1605344223108" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602527627976">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602527627976" />
   </component>
 </project>

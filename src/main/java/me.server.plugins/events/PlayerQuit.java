@@ -10,6 +10,6 @@ public class PlayerQuit implements Listener {
     @EventHandler
     final void onPlayerQuit(PlayerQuitEvent event){
         Player player = event.getPlayer();
-        event.setQuitMessage(ChatColor.RED + player.getName() + ChatColor.GOLD + " wypierdziela :o!");
+        event.setQuitMessage(ChatColor.RED + player.getName() + ChatColor.GOLD + " wychodzi :o!");
     }
 }
